@@ -2,7 +2,7 @@
 
 namespace VojislavD\LaravelMessages\Tests\Feature;
 
-use VojislavD\LaravelMessages\Actions\MarkMessageAsSeen;
+use App\Actions\MarkMessageAsSeen;
 use VojislavD\LaravelMessages\Models\User;
 use VojislavD\LaravelMessages\Tests\TestCase;
 

@@ -2,12 +2,12 @@
 
 namespace VojislavD\LaravelMessages\Providers;
 
-use VojislavD\LaravelMessages\Actions\CreateMessage;
-use VojislavD\LaravelMessages\Actions\CreateThread;
-use VojislavD\LaravelMessages\Actions\MarkMessageAsSeen;
-use VojislavD\LaravelMessages\Contracts\CreatesMessage;
-use VojislavD\LaravelMessages\Contracts\CreatesThread;
-use VojislavD\LaravelMessages\Contracts\MarksMessageAsSeen;
+use App\Actions\CreateMessage;
+use App\Actions\CreateThread;
+use App\Actions\MarkMessageAsSeen;
+use App\Contracts\CreatesMessage;
+use App\Contracts\CreatesThread;
+use App\Contracts\MarksMessageAsSeen;
 
 class ActionServiceProvider extends LaravelMessagesServiceProvider
 {

@@ -4,7 +4,7 @@ namespace VojislavD\LaravelMessages\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
-use VojislavD\LaravelMessages\Http\Livewire\Inbox;
+use App\Livewire\Inbox;
 use VojislavD\LaravelMessages\Traits\Migrations;
 
 class LaravelMessagesServiceProvider extends ServiceProvider

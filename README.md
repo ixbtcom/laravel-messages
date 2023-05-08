@@ -42,7 +42,7 @@ In your User model class add `Messagable` trait:
 ```php
 // App\Models\User.php
 
-use VojislavD\LaravelMessages\Traits\Messagable;
+use App\Contracts\Messagable;
 
 class User extends Authenticatable
 {

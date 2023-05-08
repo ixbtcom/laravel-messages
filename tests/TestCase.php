@@ -6,8 +6,8 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\DB;
 use VojislavD\LaravelMessages\Providers\LaravelMessagesServiceProvider;
 use Livewire\LivewireServiceProvider;
-use VojislavD\LaravelMessages\Models\Message;
-use VojislavD\LaravelMessages\Models\Thread;
+use App\Models\Message;
+use App\Models\Talk;
 use VojislavD\LaravelMessages\Models\User;
 use VojislavD\LaravelMessages\Providers\ActionServiceProvider;
 use VojislavD\LaravelMessages\Traits\Migrations;
@@ -27,12 +27,12 @@ class TestCase extends \Orchestra\Testbench\TestCase
     protected $anotherTestUser;
 
     /**
-     * @var \VojislavD\LaravelMessages\Models\Thread
+     * @var \App\Models\Talk
      */
     protected $testThread;
 
     /**
-     * @var \VojislavD\LaravelMessages\Models\Message
+     * @var \App\Models\Message
      */
     protected $testMessage;
 
@@ -158,7 +158,7 @@ class TestCase extends \Orchestra\Testbench\TestCase
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
         ]);
 
-        $this->testThread = Thread::create();
+        $this->testThread = Talk::create();
 
         $this->testMessage = Message::create([
             'thread_id' => $this->testThread->id,

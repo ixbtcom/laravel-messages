@@ -2,7 +2,7 @@
 
 namespace VojislavD\LaravelMessages\Tests\Feature;
 
-use VojislavD\LaravelMessages\Actions\CreateThread;
+use App\Actions\CreateThread;
 use VojislavD\LaravelMessages\Tests\TestCase;
 
 class CreateThreadActionTest extends TestCase

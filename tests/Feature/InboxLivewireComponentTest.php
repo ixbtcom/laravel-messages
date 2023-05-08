@@ -22,7 +22,7 @@ class InboxLivewireComponentTest extends TestCase
     {
         $this->actingAs($this->testUser);
 
-        foreach ($this->testThread->messages() as $message) {
+        foreach ($this->testThread->comments() as $message) {
             $this->assertDatabaseHas('messages', [
                 'id' => $message->id,
                 'seen_at' => null
@@ -32,7 +32,7 @@ class InboxLivewireComponentTest extends TestCase
         Livewire::test('inbox')
             ->call('selectThread', $this->testThread);
 
-        foreach ($this->testThread->messages() as $message) {
+        foreach ($this->testThread->comments() as $message) {
             $this->assertDatabaseHas('messages', [
                 'id' => $message->id,
                 'seen_at' => now()->toFormattedDateString()

@@ -4,7 +4,7 @@ namespace VojislavD\LaravelMessages\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Support\Facades\Storage;
-use VojislavD\LaravelMessages\Traits\Messagable;
+use App\Contracts\Messagable;
 
 class User extends Authenticatable
 {

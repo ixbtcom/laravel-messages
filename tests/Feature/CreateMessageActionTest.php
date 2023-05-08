@@ -2,7 +2,7 @@
 
 namespace VojislavD\LaravelMessages\Tests\Feature;
 
-use VojislavD\LaravelMessages\Actions\CreateMessage;
+use App\Actions\CreateMessage;
 use VojislavD\LaravelMessages\Tests\TestCase;
 
 class CreateMessageActionTest extends TestCase
