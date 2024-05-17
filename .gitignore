@@ -1,2 +1,9 @@
 vendor
 .phpunit.result.cache
+/.idea/laravel-idea.xml
+/.idea/laravel-idea-personal.xml
+/.idea/laravel-messages.iml
+/.idea/modules.xml
+/.idea/php.xml
+/.idea/phpunit.xml
+/.idea/vcs.xml
